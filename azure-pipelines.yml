@@ -1,4 +1,11 @@
 # Starter pipeline
+- task: MSBuild@1
+  inputs:
+    solution: '**/*.sln'
+    msbuildLocationMethod: 'location'
+    msbuildLocation: 'c:\vs2019'
+    platform: 'Windows Server 2019'
+    msbuildArguments: '/t:rebuild'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml

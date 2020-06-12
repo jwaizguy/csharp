@@ -15,13 +15,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-   task: MSBuild@1
+- task: MSBuild@1
   inputs:
     solution: '**/*.sln'
-    msbuildLocationMethod: 'location'
-    msbuildLocation: 'c:\vs2019'
-    platform: 'Windows Server 2019'
-    msbuildArguments: '/t:rebuild'
 - task: SynopsysDetectTask@2
   inputs:
     Products: 'PS'

@@ -23,4 +23,4 @@ steps:
     Products: 'PS'
     PolarisService: 'Polaris Quest'
     DetectVersion: 'latest'
-    DetectArguments: 'polaris analyze'
+    DetectArguments: 'polaris analyze --coverity-ignore-capture-failure'

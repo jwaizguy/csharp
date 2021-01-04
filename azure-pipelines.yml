@@ -1,4 +1,7 @@
 # Starter pipeline
+- task: SynopsysPolaris@1
+  inputs:
+    polarisCommand: 'polaris-analyze --coverity-ignore-capture-failure'
 
 
 trigger:

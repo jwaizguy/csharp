@@ -22,3 +22,9 @@ steps:
   inputs:
     polarisService: 'Polaris-Satellite'
     polarisCommand: 'analyze -w'
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo polaris.yml
+      type polaris.yml

@@ -1,7 +1,4 @@
 # Starter pipeline
-- task: SynopsysPolaris@1
-  inputs:
-    polarisCommand: 'polaris-analyze --coverity-ignore-capture-failure'
 
 
 trigger:
@@ -21,9 +18,7 @@ steps:
 - task: MSBuild@1
   inputs:
     solution: '**/*.sln'
-- task: SynopsysDetectTask@2
+- task: SynopsysPolaris@1
   inputs:
-    Products: 'PS'
-    PolarisService: 'Polaris Quest'
-    DetectVersion: 'latest'
-    DetectArguments: 'polaris analyze --coverity-ignore-capture-failure'
+    polarisService: 'Polaris-Satellite'
+    polarisCommand: 'polaris analyze -w'

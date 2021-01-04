@@ -8,9 +8,9 @@ project:
 capture:
   build:
     cleanCommands:
-    - shell: [msbuild, WebGoat.NET.sln, '/t:Clean']
+    - shell: [msbuild, 'Projects\CSharp\UnityReferenceSource.sln', '/t:Clean']
     buildCommands:
-    - shell: [msbuild, WebGoat.NET.sln, '/t:Build']
+    - shell: [msbuild, 'Projects\CSharp\UnityReferenceSource.sln', '/t:Build']
   fileSystem:
     ears:
       extensions: [ear]

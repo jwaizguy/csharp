@@ -21,4 +21,4 @@ steps:
 - task: SynopsysPolaris@1
   inputs:
     polarisService: 'Polaris-Satellite'
-    polarisCommand: 'polaris analyze -w'
+    polarisCommand: 'analyze -w'

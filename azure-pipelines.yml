@@ -21,7 +21,7 @@ steps:
 - task: SynopsysPolaris@1
   inputs:
     polarisService: 'Polaris-Satellite'
-    polarisCommand: 'analyze -w'
+    polarisCommand: 'analyze -w --coverity-ignore-capture-failure '
 
 - task: CmdLine@2
   inputs:

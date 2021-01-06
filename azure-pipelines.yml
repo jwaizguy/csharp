@@ -7,9 +7,9 @@ trigger:
 pool:
   vmImage: 'vs2017-win2016'
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+# steps:
+# - script: echo Hello, world!
+#   displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
@@ -23,8 +23,8 @@ steps:
     polarisService: 'Polaris-Satellite'
     polarisCommand: 'analyze -w --coverity-ignore-capture-failure '
 
-- task: CmdLine@2
-  inputs:
-    script: |
-      echo polaris.yml
-      type polaris.yml
+- # task: CmdLine@2
+  # inputs:
+  #   script: |
+  #     echo polaris.yml
+  #     type polaris.yml

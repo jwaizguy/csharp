@@ -7,10 +7,9 @@ trigger:
 pool:
   vmImage: 'vs2017-win2016'
 
-# steps:
+steps:
 # - script: echo Hello, world!
 #   displayName: 'Run a one-line script'
-
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
@@ -18,6 +17,7 @@ pool:
 - task: MSBuild@1
   inputs:
     solution: '**/*.sln'
+
 - task: SynopsysPolaris@1
   inputs:
     polarisService: 'Polaris-Satellite'

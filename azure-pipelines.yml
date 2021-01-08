@@ -19,4 +19,3 @@ steps:
   inputs:
     polarisService: 'Polaris-Satellite'
     polarisCommand: 'analyze -w --coverity-ignore-capture-failure '
-

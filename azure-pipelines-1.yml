@@ -3,7 +3,7 @@
   inputs:
     polarisService: 'Polaris-Satellite'
     waitForIssues: true
-    populateChangeSetFile: true
+    populateChangeSetFile: false
 # Build a Universal Windows Platform project using Visual Studio.
 # Add steps that test and distribute an app, save build artifacts, and more:
 # https://aka.ms/yaml

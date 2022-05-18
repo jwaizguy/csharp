@@ -34,11 +34,11 @@ steps:
 
 - task: SynopsysPolaris@1
    inputs:
-    polarisService: 'Polaris-Csharp'
-    polarisCommand: 'analyze -w --coverity-ignore-capture-failure '
+     polarisService: 'Polaris-Csharp'
+     polarisCommand: 'analyze -w --coverity-ignore-capture-failure '
  
 - task: SynopsysDetectTask@7
    inputs:
-      BlackDuckService: 'Black Duck - Demo Cshap'
-      DetectArguments: '--detect.policy.check.fail.on.severities=BLOCKER'
-      DetectVersion: 'latest'
+     BlackDuckService: 'Black Duck - Demo Cshap'
+     DetectArguments: '--detect.policy.check.fail.on.severities=BLOCKER'
+     DetectVersion: 'latest'

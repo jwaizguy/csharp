@@ -1,21 +1,44 @@
 # Starter pipeline
+name: Synopsys-GitHub-CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ '**' ]
+  pull_request:
+    branches: [ main ]
+    
+# Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: true
 
 trigger:
 - master
 
 pool:
-  vmImage: 'vs2017-win2016'
+  vmImage: 'windows-latest'
+variables: 
+ solution: '**/*.sln'
+ buildPlatform: 'Any CPU'
+ buildConfiguration: "Release'
 
 steps:
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: NuGetToolInstaller@1
+- task: NuGetCommand@2
+  Inputs: 
+    restoreSolution: '$(solution)'
+ 
 #- task: MSBuild@1
 #  inputs:
-#    solution: '**/*.sln'
+#    
 
 - task: SynopsysPolaris@1
   inputs:
-    polarisService: 'Polaris-Satellite'
+    polarisService: 'Polaris-Csharp'
     polarisCommand: 'analyze -w --coverity-ignore-capture-failure '
+ 
+ - task: SynopsysDetectTask@7
+   inputs:
+      BlackDuckService: "Black Duck - Demo Cshap'
+      DetectArguments: '--detect.policy.check.fail.on.severities=BLOCKER'
+      DetectVersion: 'latest'

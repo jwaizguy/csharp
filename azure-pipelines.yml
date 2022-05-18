@@ -25,7 +25,7 @@ variables:
 steps:
 - task: NuGetToolInstaller@1
 - task: NuGetCommand@2
-  Inputs: 
+  inputs: 
     restoreSolution: '$(solution)'
  
 #- task: MSBuild@1
@@ -33,12 +33,12 @@ steps:
 #    
 
 - task: SynopsysPolaris@1
-  Inputs:
+  inputs:
      polarisService: 'Polaris-Csharp'
      polarisCommand: 'analyze -w --coverity-ignore-capture-failure '
  
 - task: SynopsysDetectTask@7
-  Inputs:
+  inputs:
      BlackDuckService: 'Black Duck - Demo Cshap'
      DetectArguments: '--detect.policy.check.fail.on.severities=BLOCKER'
      DetectVersion: 'latest'

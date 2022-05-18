@@ -3,7 +3,7 @@ project:
   name: ${scm.git.repo}
   branch: ${scm.git.branch}
   revision:
-    name: ${scm.git.commit}
+    name: JW${scm.git.commit}
     date: ${scm.git.commit.date}
 capture:
   build:

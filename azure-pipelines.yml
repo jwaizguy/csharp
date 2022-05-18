@@ -39,6 +39,6 @@ steps:
  
  - task: SynopsysDetectTask@7
    inputs:
-      BlackDuckService: "Black Duck - Demo Cshap'
+      BlackDuckService: 'Black Duck - Demo Cshap'
       DetectArguments: '--detect.policy.check.fail.on.severities=BLOCKER'
       DetectVersion: 'latest'

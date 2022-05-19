@@ -24,21 +24,21 @@ jobs:
     - name: Detect Rapid Scan Action
   # You may pin to the exact commit or the version.
   # uses: synopsys-sig/detect-action@b19f2eada71e2068498090c094df34444b68c878
-  uses: synopsys-sig/detect-action@v0.3.2
-  with:
+      uses: synopsys-sig/detect-action@v0.3.2
+    with:
     # Your GitHub token
-    github-token: 'MGRhNzFiZGMtNDE4NS00NWI3LTlhNzgtOWNmMTIyYTUwYTAxOjUzOTc0YjRjLWVhZTYtNDNlZi05ZGVlLWRhZTIyYTI3N2U2Mg=='
+      github-token: 'MGRhNzFiZGMtNDE4NS00NWI3LTlhNzgtOWNmMTIyYTUwYTAxOjUzOTc0YjRjLWVhZTYtNDNlZi05ZGVlLWRhZTIyYTI3N2U2Mg=='
     # The version of Detect to download
-    detect-version: latest
+      detect-version: latest
     # Url of Black Duck instance
-    blackduck-url: https://partner-demo.blackduck.polaris.com
+      blackduck-url: https://partner-demo.blackduck.polaris.com
     # API Token for Black Duck instance
-    blackduck-api-token: 'MGRhNzFiZGMtNDE4NS00NWI3LTlhNzgtOWNmMTIyYTUwYTAxOjUzOTc0YjRjLWVhZTYtNDNlZi05ZGVlLWRhZTIyYTI3N2U2Mg=='
+      blackduck-api-token: 'MGRhNzFiZGMtNDE4NS00NWI3LTlhNzgtOWNmMTIyYTUwYTAxOjUzOTc0YjRjLWVhZTYtNDNlZi05ZGVlLWRhZTIyYTI3N2U2Mg=='
     # Either RAPID or INTELLIGENT, configures how Detect is invoked. RAPID will not persist the results and disables select Detect functionality for faster results. INTELLIGENT persists the results and permits all features of Detect.
-    scan-mode: INTELLIGENT
+      scan-mode: INTELLIGENT
     # By default, Detect will only fail on policy violations with BLOCKER or CRITICAL severities. This flag will cause the action to fail on all policy severities.
-    fail-on-all-policy-severities: # optional
+      fail-on-all-policy-severities: # optional
     # Override for where to output Detect files, default is $RUNNER_TEMP/blackduck/
-    output-path-override: # optional
+      output-path-override: # optional
     # Acceptable Values: TRUE, FALSE. If TRUE, Detect will trust the Black Duck certificate even if the certificate is not in the keystore.
-    detect-trust-cert: # optional, default is TRUE
+      detect-trust-cert: # optional, default is TRUE

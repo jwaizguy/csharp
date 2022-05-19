@@ -20,7 +20,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore Projects/CSharp/UnityReferenceSource.sln
     
   # You may pin to the exact commit or the version.
   # uses: synopsys-sig/detect-action@b19f2eada71e2068498090c094df34444b68c878

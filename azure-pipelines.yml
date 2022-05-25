@@ -30,8 +30,8 @@ steps:
 - task: SynopsysDetectTask@7
   inputs:
     BlackDuckService: 'POC03'
-    DetectArguments: |
-      --detect.policy.check.fail.on.severities=BLOCKER, CRITICAL
+    DetectArguments:
+      --detect.policy.check.fail.on.severities=BLOCKER,CRITICAL
       --detect.policy.check.fail.on.names=xyz
       --detect.project.tier=1
       --detect.project.version.name=teste1

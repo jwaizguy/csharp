@@ -44,6 +44,6 @@ steps:
       --detect.policy.check.fail.on.severities=BLOCKER,CRITICAL
       --detect.policy.check.fail.on.names=xyz
       --detect.project.tier=1
-      --detect.project.version.name=teste1'
+      --detect.project.version.name=teste1
       --detect.blackduck.scan.mode=RAPID
      DetectVersion: 'latest'

@@ -30,9 +30,6 @@ steps:
 - task: SynopsysDetectTask@7
   inputs:
     BlackDuckService: 'POC03'
-    DetectArguments: ''- task: SynopsysDetectTask@7
-  inputs:
-    BlackDuckService: 'POC03'
     DetectArguments: |
       --detect.policy.check.fail.on.severities=BLOCKER, CRITICAL
       --detect.policy.check.fail.on.names=xyz

@@ -29,7 +29,7 @@ steps:
     configuration: '$(buildConfiguration)'
 - task: SynopsysDetectTask@7
   inputs:
-    BlackDuckService: 'POC03'
+    BlackDuckService: 'Partner-Demo'
     DetectArguments:
       --detect.policy.check.fail.on.severities=CRITICAL
       --detect.policy.check.fail.on.names=xyz

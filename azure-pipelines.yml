@@ -38,6 +38,7 @@ steps:
   inputs:
     polarisService: 'Polaris-Demo'
     polarisCommand: 'analyze -w --coverity-ignore-capture-failure'
+    populateChangeSetFile: true
  
 - task: SynopsysDetectTask@7
   inputs:

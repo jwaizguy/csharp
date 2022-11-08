@@ -34,8 +34,8 @@ steps:
 
 - task: SynopsysPolaris@1
   inputs:
-     polarisService: 'Polaris-Csharp'
-     polarisCommand: 'analyze -w --coverity-ignore-capture-failure '
+    polarisService: 'Polaris-Demo'
+    polarisCommand: 'analyze -w --coverity-ignore-capture-failure'
  
 - task: SynopsysDetectTask@7
   inputs:

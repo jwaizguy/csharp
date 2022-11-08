@@ -24,9 +24,11 @@ variables:
 
 steps:
 - task: NuGetToolInstaller@1
-- task: NuGetCommand@2
-  inputs: 
+  inputs:
+    command: 'restore'
     restoreSolution: '$(solution)'
+    feedsToUse: 'select'
+    verbosityRestore: 'Quiet'
  
 #- task: MSBuild@1
 #  inputs:
@@ -40,5 +42,5 @@ steps:
 - task: SynopsysDetectTask@7
   inputs:
     BlackDuckService: 'Partner-Demo'
-    DetectArguments: '--detect.policy.check.fail.on.severities=BLOCKER,CRITICAL --detect.policy.check.fail.on.names=xyz --detect.project.tier=1 --detect.project.version.name=teste1 --detect.blackduck.scan.mode=RAPID'
+    DetectArguments: '--detect.policy.check.fail.on.severities=BLOCKER,CRITICAL --detect.policy.check.fail.on.names=xyz --detect.project.tier=1 --detect.project.name=JWCSharp --detect.project.version.name=teste21 --detect.blackduck.scan.mode=INTELLIGENT'
     DetectVersion: 'latest'

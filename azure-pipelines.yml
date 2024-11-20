@@ -52,4 +52,4 @@ steps:
      polarisReportsSarifSeverities: 'CRITICAL,HIGH,MEDIUM,LOW'
      polarisReportsSarifIssueTypes: 'SCA'
      polarisAssessmentMode: 'CI'
-     azure_token: ''
+     azure_token: 'EqAMuNkQQgVJitoFCQRihGYRpnfo8SM9qucvczEQJVFd793FsdaaJQQJ99AKACAAAAAAAAAAAAASAZDOGB7g'

@@ -34,18 +34,7 @@ steps:
 #- task: MSBuild@1
 #  inputs:
 #    
-
-- task: SynopsysPolaris@1
-  inputs:
-    polarisService: 'Polaris-Demo'
-    polarisCommand: 'analyze -w --coverity-ignore-capture-failure'
-    populateChangeSetFile: true
  
-- task: SynopsysDetectTask@7
-  inputs:
-    BlackDuckService: 'Partner-Demo'
-    DetectArguments: '--detect.policy.check.fail.on.severities=BLOCKER --detect.policy.check.fail.on.names=xyz --detect.project.tier=1 --detect.project.name=JWCSharp --detect.project.version.name=teste21 --detect.blackduck.scan.mode=INTELLIGENT'
-    DetectVersion: 'latest'
 - task: SynopsysSecurityScan@1
   inputs:
     scanType: 'polaris'
@@ -60,4 +49,4 @@ steps:
     polarisReportsSarifCreate: true
     polarisReportsSarifSeverities: 'critical'
     polarisAssessmentMode: 'CI'
-    azure_token: 'azurepat'
+    azure_token: 'EqAMuNkQQgVJitoFCQRihGYRpnfo8SM9qucvczEQJVFd793FsdaaJQQJ99AKACAAAAAAAAAAAAASAZDOGB7g'

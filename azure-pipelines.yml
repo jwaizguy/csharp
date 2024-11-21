@@ -49,4 +49,4 @@ steps:
     polarisReportsSarifCreate: true
     polarisReportsSarifSeverities: 'critical'
     polarisAssessmentMode: 'CI'
-    #azure_token: ''
+    azure_token: '5XYo7KHHC1vSFNdIhow6hUcyI52HcNFGqMzadDjKuT7Kp8tTyvOFJQQJ99AKACAAAAAWAUVTAAASAZDOq63K'

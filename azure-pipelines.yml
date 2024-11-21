@@ -40,7 +40,7 @@ steps:
     scanType: 'polaris'
     bridge_polaris_serverUrl: 'https://poc.polaris.synopsys.com`'
     bridge_polaris_accessToken: 'wefrwerewr'
-    bridge_polaris_application_name: 'ajw-doris'
+    bridge_polaris_application_name: 'AJW-doris'
     bridge_polaris_project_name: 'abc'
     bridge_polaris_assessment_types: 'SAST,SCA'
     bridge_polaris_branch_name: 'master'

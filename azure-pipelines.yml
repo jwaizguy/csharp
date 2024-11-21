@@ -44,7 +44,7 @@ steps:
     bridge_polaris_project_name: 'abc'
     bridge_polaris_assessment_types: 'SAST,SCA'
     bridge_polaris_branch_name: 'master'
-    polarisPRCommentEnabled: true
+    polarisPRCommentEnabled: false
     polarisPRCommentSeverities: 'criticial'
     polarisReportsSarifCreate: true
     polarisReportsSarifSeverities: 'critical'

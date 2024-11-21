@@ -41,7 +41,7 @@ steps:
   inputs:
      scanType: 'polaris'
      bridge_polaris_serverUrl: 'https://poc.polaris.blackduck.com'
-     bridge_polaris_accessToken: 'i6lnkpoj8l69l2bp3m3g6ukj1ikd1dnpi6u4tu4pp1f87750bul0fpk241o9caoocc7rfh0s55t5g'
+     bridge_polaris_accessToken: ''
      bridge_polaris_application_name: 'AJW-doris'
      bridge_polaris_project_name: 'doritos'
      bridge_polaris_assessment_types: 'SCA'
@@ -52,4 +52,4 @@ steps:
      polarisReportsSarifSeverities: 'CRITICAL,HIGH,MEDIUM,LOW'
      polarisReportsSarifIssueTypes: 'SCA'
      polarisAssessmentMode: 'CI'
-     azure_token: 'EqAMuNkQQgVJitoFCQRihGYRpnfo8SM9qucvczEQJVFd793FsdaaJQQJ99AKACAAAAAAAAAAAAASAZDOGB7g'
+     azure_token: ''

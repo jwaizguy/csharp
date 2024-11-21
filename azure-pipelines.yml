@@ -39,7 +39,7 @@ steps:
   inputs:
     scanType: 'polaris'
     bridge_polaris_serverUrl: 'https://poc.polaris.synopsys.com`'
-    bridge_polaris_accessToken: $(accessToken)
+    bridge_polaris_accessToken: 'i6lnkpoj8l69l2bp3m3g6ukj1g8lb27n5r9kgrtphpr9s7eq8e0ki8svno442prapd0acg0fosrgg'
     bridge_polaris_application_name: 'AJW-doris'
     bridge_polaris_project_name: 'abc'
     bridge_polaris_assessment_types: 'SAST,SCA'

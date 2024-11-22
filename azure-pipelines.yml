@@ -39,7 +39,7 @@ steps:
   inputs:
     scanType: 'polaris'
     bridge_polaris_serverUrl: 'https://poc.polaris.blackduck.com`'
-    bridge_polaris_accessToken: 'i6lnkpoj8l69l2bp3m3g6ukj1g8lb27n5r9kgrtphpr9s7eq8e0ki8svno442prapd0acg0fosrgg'
+    bridge_polaris_accessToken: ''
     bridge_polaris_application_name: 'AJW-doris'
     bridge_polaris_project_name: 'abc'
     bridge_polaris_assessment_types: 'SAST,SCA'
@@ -49,4 +49,4 @@ steps:
     polarisReportsSarifCreate: true
     polarisReportsSarifSeverities: 'critical'
     polarisAssessmentMode: 'CI'
-    azure_token: '5XYo7KHHC1vSFNdIhow6hUcyI52HcNFGqMzadDjKuT7Kp8tTyvOFJQQJ99AKACAAAAAWAUVTAAASAZDOq63K'
+    azure_token: ''
